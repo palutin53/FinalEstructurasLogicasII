@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Agenda
 {
-    public class ArbolBinarioOrdenado
+    public class AVL
     {
         class Nodo
         {
@@ -17,7 +17,7 @@ namespace Agenda
         private Nodo raiz;
         private int cant;
 
-        public ArbolBinarioOrdenado()
+        public AVL()
         {
             raiz = null;
         }
@@ -53,7 +53,6 @@ namespace Agenda
                 }
             }
 
-            // Esta forma es muy ineficiente, se deberia de calcular el nivel cuando se inserta el nodo
             CalcularNivel();
         }
 
